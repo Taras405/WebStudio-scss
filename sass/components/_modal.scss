@@ -1,0 +1,198 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-visible .modal {
+    animation: slideDown 0.4s forwards;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.backdrop.is-closing .modal {
+    animation: slideUp 0.4s forwards;
+}
+
+
+.backdrop.is-active .modal {
+    transform: translate(-50%, -50%);
+    animation: none;
+}
+
+.backdrop.is-closing {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0, 2 1);
+}
+
+.box-modal {
+    width: 528px;
+    text-align: start;
+    padding-left: 40px;
+}
+
+.box-modal h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 3%;
+    color: #212121;
+}
+
+.box-modal label {
+    width: 448px;
+    height: 58px;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1%;
+}
+
+.name,
+.tel,
+.email1,
+.text-a-modal {
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #21212120;
+    border-radius: 4px;
+    padding-left: 30px;
+}
+
+.name:focus,
+.tel:focus,
+.email1:focus,
+.text-a-modal:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.name:focus+.other-svg,
+.tel:focus+.other-svg,
+.email1:focus+.other-svg,
+.text-a-modal:focus+.other-svg {
+    fill: #2196F3;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid #2196F3;
+}
+
+input:focus~.other-svg {
+    fill: #2196F3;
+}
+
+.text-a-modal {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 15px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #21212120;
+}
+
+
+.agreement input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #2196F3;
+}
+
+.box-modal label {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.button-m {
+    width: 250px;
+    height: 50px;
+    padding: 10px 0;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 110px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-m:hover {
+    background-color: #188CE8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.other-svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    fill: #000;
+    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.other-svg:hover {
+    fill: #2196F3;
+    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: #000;
+    border: 1px solid #0000001A;
+    padding: 10px;
+    border-radius: 100%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover {
+    fill: #2196F3;
+    border: 1px solid #0000001A;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
