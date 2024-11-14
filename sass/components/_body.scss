@@ -1,4 +1,4 @@
-.container-section {
+.container__section {
     background-image: url(/img/background1.png);
     background-repeat: no-repeat;
     background-color: var(--darkgrey);
@@ -10,7 +10,7 @@
     text-align: center;
     padding: 200px;
 
-    h2 {
+    .advertisement {
         font-weight: black;
         text-align: center !important;
         font-size: 44px;
@@ -18,56 +18,41 @@
         letter-spacing: 3px;
         color: var(--white);
     }
-}
 
-/* ефективні рішення для вашого бізнесу */
-// .advertisement {
-//     font-weight: black;
-//     text-align: center !important;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     letter-spacing: 3px;
-//     color: var(--white);
-// }
-
-#button {
-    background-color: var(--blue);
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 50px;
-    letter-spacing: 6%;
-    border-radius: 4px;
-    border: none;
-    padding: 0 20px;
-    margin-top: 20px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        background-color: #188CE8;
-        box-shadow: 0px 4px 15px rgb(15, 15, 15);
-        transform: scale(1.03);
+    #button {
+        background-color: var(--blue);
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 50px;
+        letter-spacing: 6%;
+        border-radius: 4px;
+        border: none;
+        padding: 0 20px;
+        margin-top: 20px;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: #188CE8;
+            box-shadow: 0px 4px 15px rgb(15, 15, 15);
+            transform: scale(1.03);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 }
 
-// #button:hover {
-//     background-color: #188CE8;
-//     box-shadow: 0px 4px 15px rgb(15, 15, 15);
-//     transform: scale(1.03);
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+/* ефективні рішення для вашого бізнесу */
 
-.section-2 {
+.section__2 {
     display: flex;
     justify-content: center;
 
-    .main-container {
+    .main__container {
         display: flex;
         margin-top: 94px;
 
-        div {
+        .advantage {
             flex: 1 1 200px;
             margin: 10px;
             text-align: center;
@@ -86,7 +71,7 @@
                 border-radius: 5px;
             }
 
-            .my-text {
+            .my__text {
                 .advantages {
                     font-weight: bold;
                     font-size: 14px;
@@ -106,24 +91,6 @@
     }
 }
 
-
-// .main-container {
-//     display: flex;
-//     margin-top: 94px;
-// }
-
-// .advantage {
-//     flex: 1 1 200px;
-//     margin: 10px;
-//     text-align: center;
-//     transition: all 250ms ease-out;
-// }
-
-// .advantage:hover {
-//     transform: scale(1.1);
-//     transition: all 250ms ease-out;
-// }
-
 /* icon & svg */
 
 .icon {
@@ -132,34 +99,7 @@
     background-color: var(--creamwhite);
 }
 
-// .svg {
-//     width: 270px;
-//     height: 120px;
-//     background-color: #F5F4FA;
-//     margin-left: 20px;
-//     border-radius: 5px;
-// }
-
-
-/* наші вмяння,переваги */
-// .advantages {
-//     font-weight: bold;
-//     font-size: 14px;
-//     text-align: start;
-//     margin-left: 25px;
-// }
-
-/* розпис вмінь,переваг */
-
-
-// .paragraf {
-//     font-size: 14px;
-//     text-align: left;
-//     color: var(--grey);
-//     margin-left: 25px;
-// }
-
-.container-box {
+.container__box {
     flex-wrap: wrap;
     padding-bottom: 94px;
 
@@ -175,20 +115,13 @@
     }
 }
 
-// .headers {
-//     text-align: center;
-//     font-weight: bold;
-//     font-size: 36px;
-// }
-
-
-.headers-box {
+.headers__box {
     font-weight: bold;
     font-size: 36px;
     padding-top: 94px;
 }
 
-.box-section {
+.box__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,7 +131,7 @@
     margin: 0 30px;
 }
 
-.box-text {
+.box__text {
     color: white;
     background-color: var(--darkgrey);
     text-align: center;
@@ -228,12 +161,12 @@
 
 /* наша група */
 
-.container-group {
+.container__group {
     background-color: var(--creamwhite);
     padding-bottom: 94px;
 }
 
-.team-grid {
+.team__grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -249,30 +182,30 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.person-icon {
+.person__icon {
     display: flex;
     padding-left: 28px;
     gap: 10px;
 }
 
-.icon-hever {
+.icon__hever {
     fill: #AFB1B8;
     width: 44px;
     height: 44px;
     border-radius: 100%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icon-hever:hover {
-    background-color: #2196F3;
-    fill: #FFFFFF;
-    border: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    &:hover {
+        background-color: #2196F3;
+        fill: #FFFFFF;
+        border: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
 }
 
 /* імя людей */
-.name-person {
+.name_person {
     font-weight: Medium;
     font-size: 16px;
 }
@@ -290,7 +223,7 @@
     margin: 94px 120px;
 }
 
-.logo-img {
+.logo__img {
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -299,124 +232,15 @@
     height: 56px;
     fill: #AFB1B8;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.logo-img:hover {
-    padding: 16px 32px;
-    border: 1px solid #2196F3;
-    border-radius: 4px;
-    margin-right: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    transform: scale(1.1);
-    fill: #2196F3;
-}
-
-
-
-/* footer */
-
-.footer-container1 {
-    background-color: var(--darkgrey);
-}
-
-.footer {
-    background-color: var(--darkgrey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    margin-left: -1px;
-}
-
-.footer-container {
-    height: 252px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-    margin-top: 60px;
-}
-
-.footer-section {
-    margin-top: -60px;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.WebStudio2 {
-    text-align: left;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: auto;
-    letter-spacing: 3%;
-    cursor: pointer;
-}
-
-.footer-div {
-    margin-left: 10px;
-}
-
-.icon-footer {
-    fill: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-footer1 {
-    fill: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: 2px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-footer1:hover {
-    border-radius: 100%;
-    border: none;
-    fill: #FFFFFF;
-    background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-}
-
-.icon-footer:hover {
-    border-radius: 100%;
-    border: none;
-    fill: #FFFFFF;
-    background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-}
-
-.s-input {
-    margin-top: 72px;
-    margin-left: 93px;
-    margin-right: -10px;
-}
-
-.div-input {
-    display: flex;
-}
-
-.email {
-    width: 358px;
-    height: 50px;
-    background-color: #2F303A;
-    border: 1px solid #FFFFFF30;
-}
-
-input::placeholder {
-    padding-left: 16px;
-}
-
-.button-ul {
-    display: flex;
-    list-style: none;
+    &:hover {
+        padding: 16px 32px;
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+        margin-right: 30px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        transform: scale(1.1);
+        fill: #2196F3;
+    }
 }

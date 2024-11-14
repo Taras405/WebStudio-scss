@@ -3,21 +3,21 @@ const modalCloseButton = document.querySelector('[data-modal-close]');
 const backdrop = document.querySelector('.backdrop');
 
 function openModal() {
-    backdrop.classList.remove('is-hidden', 'is-closing');
-    backdrop.classList.add('is-visible');
+    backdrop.classList.remove('is__hidden', 'is__closing');
+    backdrop.classList.add('is__visible');
 
     backdrop.addEventListener('animationend', () => {
-        backdrop.classList.add('is-active'); 
+        backdrop.classList.add('is__active'); 
     }, { once: true });
 }
 
 function closeModal() {
-    backdrop.classList.remove('is-active');
-    backdrop.classList.add('is-closing');
+    backdrop.classList.remove('is__active');
+    backdrop.classList.add('is__closing');
 
     backdrop.addEventListener('animationend', () => {
-        backdrop.classList.remove('is-visible', 'is-closing');
-        backdrop.classList.add('is-hidden');
+        backdrop.classList.remove('is__visible', 'is__closing');
+        backdrop.classList.add('is__hidden');
     }, { once: true });
 }
 
