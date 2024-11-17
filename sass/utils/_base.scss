@@ -18,3 +18,33 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.white {
+    color: var(--white);
+}
+
+button {
+    cursor: pointer;
+}
+
+.text-decoration {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #188CE8;
+    transition: color 150ms linear;
+    cursor: pointer;
+}

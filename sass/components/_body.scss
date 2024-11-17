@@ -1,4 +1,4 @@
-.container__section {
+.section__1 {
     background-image: url(/img/background1.png);
     background-repeat: no-repeat;
     background-color: var(--darkgrey);
@@ -42,13 +42,11 @@
     }
 }
 
-/* ефективні рішення для вашого бізнесу */
-
 .section__2 {
     display: flex;
     justify-content: center;
 
-    .main__container {
+    .section2__box {
         display: flex;
         margin-top: 94px;
 
@@ -73,14 +71,16 @@
 
             .my__text {
                 .advantages {
-                    font-weight: bold;
-                    font-size: 14px;
+                    font: 700 14px 'Roboto', sans-serif;
+                    color: #212121;
                     text-align: start;
                     margin-left: 25px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
                 }
 
                 .paragraf {
-                    font-size: 14px;
+                    font: 400 14px 'Roboto', sans-serif;
                     text-align: left;
                     color: var(--grey);
                     margin-left: 25px;
@@ -99,7 +99,7 @@
     background-color: var(--creamwhite);
 }
 
-.container__box {
+.section3__box {
     flex-wrap: wrap;
     padding-bottom: 94px;
 
@@ -112,135 +112,164 @@
         h2 {
             font: bold 36px 'Roboto', sans-serif;
         }
+
+    }
+
+    .box__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .box {
+            margin: 0 30px;
+
+            &:nth-child(1) {
+                background-image: url(/img/box1.jpg);
+                width: 370px;
+                height: 294px;
+            }
+
+            &:nth-child(2) {
+                background-image: url(/img/box2.png);
+                width: 370px;
+                height: 294px;
+            }
+
+            &:nth-child(3) {
+                background-image: url(/img/box3.png);
+                width: 370px;
+                height: 294px;
+            }
+
+            .box__text {
+                color: white;
+                background-color: var(--darkgrey);
+                text-align: center;
+                padding: 23px 50px;
+                opacity: 85%;
+                margin-top: 221px;
+            }
+        }
     }
 }
 
-.headers__box {
-    font-weight: bold;
-    font-size: 36px;
-    padding-top: 94px;
-}
-
-.box__section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.box {
-    margin: 0 30px;
-}
-
-.box__text {
-    color: white;
-    background-color: var(--darkgrey);
-    text-align: center;
-    padding: 23px 50px;
-    opacity: 85%;
-    margin-top: 221px;
-}
-
-.box:nth-child(1) {
-    background-image: url(/img/box1.jpg);
-    width: 370px;
-    height: 294px;
-}
-
-.box:nth-child(2) {
-    background-image: url(/img/box2.png);
-    width: 370px;
-    height: 294px;
-}
-
-.box:nth-child(3) {
-    background-image: url(/img/box3.png);
-    width: 370px;
-    height: 294px;
-}
-
+// хз шось лишнє
+// .headers__box {
+//     font-weight: bold;
+//     font-size: 36px;
+//     padding-top: 94px;
+// }
 
 /* наша група */
 
-.container__group {
+.section__4 {
     background-color: var(--creamwhite);
     padding-bottom: 94px;
-}
 
-.team__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .headers {
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+        margin: 94px 0 50px 0;
 
-.person {
-    text-align: center;
-    margin: 0 30px;
-    background-color: var(--white);
-    width: 270px;
-    height: 420px;
-    box-shadow: -10px -5px 10px -15px rgba(0, 0, 0, 0.568), 0px 1px 1px 0px rgba(0, 0, 0, 0.568);
-    border-radius: 0px 0px 4px 4px;
-}
+        h2 {
+            font: bold 36px 'Roboto', sans-serif;
+        }
 
-.person__icon {
-    display: flex;
-    padding-left: 28px;
-    gap: 10px;
-}
+    }
 
-.icon__hever {
-    fill: #AFB1B8;
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .team__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-    &:hover {
-        background-color: #2196F3;
-        fill: #FFFFFF;
-        border: none;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
+        .person {
+            text-align: center;
+            margin: 0 30px;
+            background-color: var(--white);
+            width: 270px;
+            height: 420px;
+            box-shadow: -10px -5px 10px -15px rgba(0, 0, 0, 0.568), 0px 1px 1px 0px rgba(0, 0, 0, 0.568);
+            border-radius: 0px 0px 4px 4px;
+
+            .name__person {
+                font: 500 16px 'Roboto', sans-serif;
+                line-height: 19px;
+                letter-spacing: 3%;
+                color: #212121;
+                margin-top: 20px;
+            }
+
+            .make {
+                font: 400 16px 'Roboto';
+                line-height: 19px;
+                letter-spacing: 3%;
+                color: #757575;
+                margin-top: 10px;
+            }
+
+            .person__icon {
+                display: flex;
+                padding-left: 28px;
+                gap: 10px;
+                margin-top: 16px;
+                margin-bottom: 30px;
+            }
+
+            .icon__hever {
+                fill: #AFB1B8;
+                width: 44px;
+                height: 44px;
+                border-radius: 100%;
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+                &:hover {
+                    background-color: #2196F3;
+                    fill: #FFFFFF;
+                    border: none;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 
-/* імя людей */
-.name_person {
-    font-weight: Medium;
-    font-size: 16px;
-}
-
-/* чим займаються */
-.make {
-    font-size: 14px;
-}
-
-/* regular customers  */
-
-.customers {
+.section__5 {
     font-family: "Roboto", sans-serif;
     text-align: center;
     margin: 94px 120px;
-}
 
-.logo__img {
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    margin-right: 30px;
-    width: 104px;
-    height: 56px;
-    fill: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    h3 {
+        font: 700 36px 'Roboto', sans-serif;
+        line-height: 42px;
+        letter-spacing: 3%;
+        color: #212121;
+        margin-bottom: 50px;
+    }
 
-    &:hover {
-        padding: 16px 32px;
-        border: 1px solid #2196F3;
-        border-radius: 4px;
-        margin-right: 30px;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-        transform: scale(1.1);
-        fill: #2196F3;
+    .logo__box {
+
+        .logo__img {
+            padding: 16px 32px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            margin-right: 30px;
+            width: 170px;
+            height: 92px;
+            fill: #AFB1B8;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                padding: 16px 32px;
+                border: 1px solid #2196F3;
+                border-radius: 4px;
+                margin-right: 30px;
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                cursor: pointer;
+                transform: scale(1.1);
+                fill: #2196F3;
+            }
+        }
     }
 }
