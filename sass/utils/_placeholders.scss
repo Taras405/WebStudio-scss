@@ -1,0 +1,19 @@
+%centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%centeredlink {
+    display: flex;
+    list-style: none;
+}
+
+%fontsection {
+    font: 700 36px 'Roboto', sans-serif;
+    line-height: 42px;
+    letter-spacing: 3%;
+    color: #212121;
+    margin-bottom: 50px;
+}

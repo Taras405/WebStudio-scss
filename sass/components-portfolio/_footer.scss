@@ -4,18 +4,16 @@
 
     .footer__box {
         background-color: var(--darkgrey);
-        display: flex;
-        justify-content: center;
+        @extend %centered;
         align-items: center;
         margin-left: 60px;
 
         .footer__box1 {
             height: 252px;
             display: flex;
-            flex-direction: column;
             margin-right: 70px;
             margin-top: 60px;
-            
+
             .WebStudio2 {
                 text-align: left;
                 font-weight: bold;
@@ -25,9 +23,11 @@
                 cursor: pointer;
                 margin-bottom: 20px;
             }
+
             address {
                 margin-bottom: 9px;
             }
+
             a {
                 margin-bottom: -6px;
             }
@@ -37,7 +37,6 @@
         .footer__box2 {
             margin-top: -90px;
             display: flex;
-            flex-direction: column;
             text-align: start;
 
             h4 {
@@ -123,8 +122,7 @@
                 }
 
                 .button__ul {
-                    display: flex;
-                    list-style: none;
+                    @extend %centeredlink;
 
                     .button__f {
                         width: 200px;

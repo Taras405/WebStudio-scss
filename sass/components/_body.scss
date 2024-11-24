@@ -3,15 +3,11 @@
     background-repeat: no-repeat;
     background-color: var(--darkgrey);
     background-size: cover;
-    justify-content: center;
-    display: flex;
+    @extend %centered;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     padding: 200px;
 
     .advertisement {
-        font-weight: black;
         text-align: center !important;
         font-size: 44px;
         line-height: 1.36;
@@ -23,8 +19,7 @@
         background-color: var(--blue);
         display: inline-block;
         text-align: center;
-        font-weight: bold;
-        font-size: 16px;
+        font: bold 16px;
         line-height: 50px;
         letter-spacing: 6%;
         border-radius: 4px;
@@ -43,8 +38,7 @@
 }
 
 .section__2 {
-    display: flex;
-    justify-content: center;
+    @extend %centered;
 
     .section2__box {
         display: flex;
@@ -105,20 +99,16 @@
 
     .headers {
         text-align: center;
-        font-weight: bold;
-        font-size: 36px;
         margin: 94px 0 50px 0;
 
         h2 {
-            font: bold 36px 'Roboto', sans-serif;
+            @extend %fontsection;
         }
 
     }
 
     .box__section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @extend %centered;
 
         .box {
             margin: 0 30px;
@@ -168,20 +158,16 @@
 
     .headers {
         text-align: center;
-        font-weight: bold;
-        font-size: 36px;
         margin: 94px 0 50px 0;
 
         h2 {
-            font: bold 36px 'Roboto', sans-serif;
+            @extend %fontsection;
         }
 
     }
 
     .team__grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @extend %centered;
 
         .person {
             text-align: center;
@@ -241,11 +227,7 @@
     margin: 94px 120px;
 
     h3 {
-        font: 700 36px 'Roboto', sans-serif;
-        line-height: 42px;
-        letter-spacing: 3%;
-        color: #212121;
-        margin-bottom: 50px;
+        @extend %fontsection;
     }
 
     .logo__box {

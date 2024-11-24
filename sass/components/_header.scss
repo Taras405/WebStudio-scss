@@ -1,7 +1,5 @@
 .header__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centered;
     text-align: center;
     position: fixed;
     z-index: 1;
@@ -23,8 +21,7 @@
         margin-right: 318px;
 
         &__list {
-            display: flex;
-            list-style: none;
+            @extend %centeredlink;
             padding: 0;
             margin: 0;
 
@@ -90,8 +87,7 @@
 }
 
 .nav__contact {
-    display: flex;
-    list-style: none;
+    @extend %centeredlink;
 
     .contact {
         transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,8 +122,7 @@
 
 // @media (max-width:768px) {
 //     .header__container {
-//         display: flex;
-//         justify-content: center;
+//         @extend %centered;
 //         align-items: center;
 //         position: fixed;
 //         z-index: 1;
@@ -150,8 +145,7 @@
 //     margin-right: 96px;
 
 //     .header__list {
-//         display: flex;
-//         list-style: none;
+//         @extend %centeredlink;
 //         padding: 0;
 //         margin: 0;
 
@@ -192,8 +186,7 @@
 // }
 
 // .nav__contact {
-//     display: flex;
-//     list-style: none;
+//     @extend %centeredlink;
 
 //     .contact {
 //         transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);

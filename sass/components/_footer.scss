@@ -4,9 +4,7 @@
 
     .footer__box {
         background-color: var(--darkgrey);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %centered;
         margin-left: 60px;
 
         .footer__box1 {
@@ -15,7 +13,7 @@
             flex-direction: column;
             margin-right: 70px;
             margin-top: 60px;
-            
+
             .WebStudio2 {
                 text-align: left;
                 font-weight: bold;
@@ -25,9 +23,11 @@
                 cursor: pointer;
                 margin-bottom: 20px;
             }
+
             address {
                 margin-bottom: 9px;
             }
+
             a {
                 margin-bottom: -6px;
             }
@@ -42,9 +42,7 @@
 
             h4 {
                 color: #FFFFFF;
-                font-family: "Roboto", sans-serif;
-                font-weight: 700;
-                font-size: 14px;
+                font: 700 14px "Roboto", sans-serif;
                 letter-spacing: 3%;
                 line-height: 16.41px;
                 margin-left: 10px;
@@ -103,9 +101,7 @@
 
             h4 {
                 color: #FFFFFF;
-                font-family: "Roboto", sans-serif;
-                font-weight: 700;
-                font-size: 14px;
+                font: 700 14px "Roboto", sans-serif;
                 letter-spacing: 3%;
                 line-height: 16.41px;
                 margin-left: 10px;
@@ -123,8 +119,7 @@
                 }
 
                 .button__ul {
-                    display: flex;
-                    list-style: none;
+                    @extend %centeredlink;
 
                     .button__f {
                         width: 200px;
