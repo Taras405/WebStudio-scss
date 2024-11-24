@@ -76,12 +76,11 @@ a:hover {
   cursor: pointer;
   margin-left: -20px;
 }
-
-.header__nav {
+.header__container__nav {
   margin-left: 93px;
   margin-right: 318px;
 }
-.header__nav .header__list {
+.header__container__nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,13 +88,13 @@ a:hover {
   padding: 0;
   margin: 0;
 }
-.header__nav .header__list .header__item {
+.header__container__nav__list__item {
   margin: 0 15px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.header__nav .header__list .header__item .header__link {
+.header__container__nav__list__item__link {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
@@ -103,12 +102,12 @@ a:hover {
   position: relative;
   padding-bottom: 23px;
 }
-.header__nav .header__list .header__item .header__link:hover {
+.header__container__nav__list__item__link:hover {
   color: #2196F3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__nav .header__list .header__item .header__link:hover::after {
+.header__container__nav__list__item__link:hover::after {
   -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   content: "";
@@ -533,7 +532,7 @@ a:hover {
   cursor: pointer;
   fill: #000;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
-  padding: 10px;
+  padding: 3px;
   border-radius: 100%;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
