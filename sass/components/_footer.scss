@@ -41,10 +41,7 @@
             text-align: start;
 
             h4 {
-                color: #FFFFFF;
-                font: 700 14px "Roboto", sans-serif;
-                letter-spacing: 3%;
-                line-height: 16.41px;
+                @include text-style(700, 14px, 'Roboto', 16px, var(--white), center);
                 margin-left: 10px;
                 margin-bottom: 20px;
             }
@@ -100,10 +97,7 @@
             margin-right: -10px;
 
             h4 {
-                color: #FFFFFF;
-                font: 700 14px "Roboto", sans-serif;
-                letter-spacing: 3%;
-                line-height: 16.41px;
+                @include text-style(700, 16px, 'Roboto', 16px, var(--white));
                 margin-left: 10px;
                 margin-bottom: 20px;
             }
@@ -124,17 +118,11 @@
                     .button__f {
                         width: 200px;
                         height: 50px;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 30px;
-                        letter-spacing: 6%;
-                        color: #FFFFFF;
+                        @include text-style(700, 16px, 'Roboto', 30px, var(--white), start);
                         background-color: #2196F3;
                         border: none;
-                        text-align: start;
                         padding-left: 30px;
                         border-radius: 4px;
-                        // margin-top: -14px;
                         margin-left: 12px;
                         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

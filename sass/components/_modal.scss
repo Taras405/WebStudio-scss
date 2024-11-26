@@ -77,25 +77,14 @@
     }
 
     h3 {
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 3%;
-        color: #212121;
+        @include text-style(700, 20px, 'Roboto', 23px, #212121);
         margin: 20px 0 12px 0;
     }
 
     label {
         width: 448px;
         height: 58px;
-        color: #757575;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 1%;
+        @include text-style(400, 12px, 'Roboto', 14px, #757575, center);
         margin-bottom: 15px;
         position: relative;
     }

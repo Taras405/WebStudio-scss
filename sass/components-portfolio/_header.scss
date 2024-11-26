@@ -7,11 +7,7 @@
     width: 100%;
 
     .WebStudio {
-        text-align: left;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: auto;
-        letter-spacing: 3%;
+        @include text-style(700, 26px, 'Roboto', 30px, #212121, left);
         cursor: pointer;
         margin-left: -20px;
     }

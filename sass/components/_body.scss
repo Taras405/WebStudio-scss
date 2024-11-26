@@ -8,20 +8,13 @@
     padding: 200px;
 
     .advertisement {
-        text-align: center !important;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 3px;
-        color: var(--white);
+        @include text-style(900, 44px, 'Roboto', 1.36, var(--white));
     }
 
     #button {
         background-color: var(--blue);
         display: inline-block;
-        text-align: center;
-        font: bold 16px;
-        line-height: 50px;
-        letter-spacing: 6%;
+        @include text-style(700, 16px, 'Roboto', 50px, #FFFFFF);
         border-radius: 4px;
         border: none;
         padding: 0 20px;
@@ -65,18 +58,12 @@
 
             .my__text {
                 .advantages {
-                    font: 700 14px 'Roboto', sans-serif;
-                    color: #212121;
-                    text-align: start;
-                    margin-left: 25px;
-                    margin-top: 20px;
-                    margin-bottom: 10px;
+                    @include text-style(700, 14px, 'Roboto', 3px, #212121, start);
+                    margin: 20px 25px 10px;
                 }
 
                 .paragraf {
-                    font: 400 14px 'Roboto', sans-serif;
-                    text-align: left;
-                    color: var(--grey);
+                    @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
                     margin-left: 25px;
                 }
 
@@ -112,43 +99,31 @@
 
         .box {
             margin: 0 30px;
+            width: 370px;
+            height: 294px;
 
             &:nth-child(1) {
                 background-image: url(/img/box1.jpg);
-                width: 370px;
-                height: 294px;
             }
 
             &:nth-child(2) {
                 background-image: url(/img/box2.png);
-                width: 370px;
-                height: 294px;
             }
 
             &:nth-child(3) {
                 background-image: url(/img/box3.png);
-                width: 370px;
-                height: 294px;
             }
 
             .box__text {
-                color: white;
                 background-color: var(--darkgrey);
-                text-align: center;
                 padding: 23px 50px;
                 opacity: 85%;
-                margin-top: 221px;
+                margin-top: 232px;
+                @include text-style(700, 14px, 'Roboto', 16px, var(--white), center);
             }
         }
     }
 }
-
-// хз шось лишнє
-// .headers__box {
-//     font-weight: bold;
-//     font-size: 36px;
-//     padding-top: 94px;
-// }
 
 /* наша група */
 
@@ -179,18 +154,12 @@
             border-radius: 0px 0px 4px 4px;
 
             .name__person {
-                font: 500 16px 'Roboto', sans-serif;
-                line-height: 19px;
-                letter-spacing: 3%;
-                color: #212121;
+                @include text-style(500, 16px, 'Roboto', 19px, #212121);
                 margin-top: 20px;
             }
 
             .make {
-                font: 400 16px 'Roboto';
-                line-height: 19px;
-                letter-spacing: 3%;
-                color: #757575;
+                @include text-style(400, 16px, 'Roboto', 19px, var(grey));
                 margin-top: 10px;
             }
 
@@ -222,7 +191,6 @@
 }
 
 .section__5 {
-    font-family: "Roboto", sans-serif;
     text-align: center;
     margin: 94px 120px;
 
@@ -240,15 +208,12 @@
             width: 170px;
             height: 92px;
             fill: #AFB1B8;
+            cursor: pointer;
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover {
-                padding: 16px 32px;
                 border: 1px solid #2196F3;
-                border-radius: 4px;
-                margin-right: 30px;
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                cursor: pointer;
                 transform: scale(1.1);
                 fill: #2196F3;
             }
