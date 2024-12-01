@@ -245,6 +245,111 @@ a:hover {
   margin-left: -90px;
 }
 
+@media (max-width: 768px) {
+  .header__container {
+    width: 100%;
+  }
+  .header__container .WebStudio {
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Raleway";
+    line-height: 30px;
+    color: #212121;
+    text-align: left;
+    letter-spacing: 3%;
+    margin-left: -20px;
+  }
+  .header__container__nav {
+    margin-left: 93px;
+    margin-right: 318px;
+  }
+  .header__container__nav__list__item {
+    margin: 0 15px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header__container__nav__list__item__link {
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: var(--black);
+    position: relative;
+    padding-bottom: 23px;
+  }
+  .header__container__nav__list__item__link:hover {
+    color: #2196F3;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__container__nav__list__item__link:hover::after {
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .header__a {
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #757575;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__a:hover {
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #2196F3;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__contact .contact {
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__contact .contact::after:hover {
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .nav__contact .contact:hover .svg__head {
+    fill: #2196F3;
+    color: #2196F3;
+    cursor: pointer;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__contact .contact .svg__head {
+    width: 106px;
+    height: 12px;
+    fill: #AFB1B8;
+    margin-left: -90px;
+  }
+}
 .section__1 {
   background-image: url(/img/background1.png);
   background-repeat: no-repeat;
@@ -297,6 +402,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 94px;
+  gap: 20px;
 }
 .section__2 .section2__box .advantage {
   -webkit-box-flex: 1;
@@ -317,7 +423,6 @@ a:hover {
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-  margin-left: 20px;
   border-radius: 5px;
 }
 .section__2 .section2__box .advantage .my__text .advantages {
@@ -475,6 +580,92 @@ a:hover {
   fill: #2196F3;
 }
 
+@media (max-width: 768px) {
+  .section__1 .advertisement {
+    font-weight: 900;
+    font-size: 26px;
+    font-family: "Roboto";
+    line-height: 1.36;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .section__1 #button {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Roboto";
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 3%;
+    padding: 10px 20px;
+  }
+  .section__2 .section2__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .section__2 .section2__box .advantage .my__text {
+    position: relative;
+    left: 20px;
+  }
+  .section__2 .section2__box .advantage .my__text .advantages {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 3px;
+    color: #212121;
+    text-align: start;
+    letter-spacing: 3%;
+    margin: 20px 25px 10px;
+  }
+  .section__2 .section2__box .advantage .my__text .paragraf {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 24px;
+    color: var(--grey);
+    text-align: left;
+    letter-spacing: 3%;
+    margin-left: 25px;
+  }
+  .section3__box {
+    display: none;
+  }
+  .section__4 .headers {
+    padding-top: 60px;
+  }
+  .section__4 .headers h2 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Roboto";
+    line-height: 32px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .section__4 .team__grid .person:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+  .section__4 .team__grid .person:nth-of-type(2) {
+    margin-bottom: 30px;
+  }
+  .section__5 h3 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Roboto";
+    line-height: 32px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .section__5 .logo__box {
+    height: 227px !important;
+  }
+  .section__5 .logo__box .logo__img {
+    width: 226px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -878,7 +1069,6 @@ input::placeholder {
   text-align: left;
   letter-spacing: 3%;
   cursor: pointer;
-  margin-left: -20px;
 }
 
 .header__nav {
@@ -937,6 +1127,13 @@ input::placeholder {
 }
 
 .header__a {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 16px;
+  color: #212121;
+  text-align: none;
+  letter-spacing: 3%;
   text-decoration: none;
   padding: 0 10px;
   cursor: pointer;
@@ -956,6 +1153,7 @@ input::placeholder {
 .nav__contact .contact {
   -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 161px;
 }
 .nav__contact .contact::after:hover {
   -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -977,12 +1175,84 @@ input::placeholder {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__contact .contact .svg__head {
-  width: 106px;
-  height: 12px;
   fill: #AFB1B8;
-  margin-left: -90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 85px;
+  top: 15px;
 }
 
+@media (max-width: 768px) {
+  .header__container .WebStudio {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Roboto";
+    line-height: 28px;
+    color: #212121;
+    text-align: left;
+    letter-spacing: 3%;
+    cursor: pointer;
+    margin-left: -250px;
+  }
+  .header__nav {
+    margin-left: 88px;
+    margin-right: 90px;
+  }
+  .header__nav .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .header__nav .header__list .header__item {
+    margin: 0 15px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .nav__contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__contact .contact {
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 138px;
+  }
+  .nav__contact .contact::after:hover {
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .nav__contact .contact:hover .svg__head {
+    fill: #2196F3;
+    color: #2196F3;
+    cursor: pointer;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__contact .contact .svg__head {
+    width: 10px;
+    height: 14px;
+    position: relative;
+    left: 82px;
+    top: 15px;
+    fill: #AFB1B8;
+  }
+}
 .header__portfolio {
   border-bottom: 1px #ECECEC solid;
   margin-bottom: 94px;

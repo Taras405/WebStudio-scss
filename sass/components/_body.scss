@@ -36,6 +36,7 @@
     .section2__box {
         display: flex;
         margin-top: 94px;
+        gap: 20px;
 
         .advantage {
             flex: 1 1 200px;
@@ -52,7 +53,6 @@
                 width: 270px;
                 height: 120px;
                 background-color: #F5F4FA;
-                margin-left: 20px;
                 border-radius: 5px;
             }
 
@@ -216,6 +216,89 @@
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 transform: scale(1.1);
                 fill: #2196F3;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section__1 {
+        .advertisement {
+            @include text-style(900, 26px, 'Roboto', 1.36, var(--white));
+        }
+
+        #button {
+            @include text-style(700, 16px, 'Roboto', 30px, #FFFFFF);
+            padding: 10px 20px;
+        }
+    }
+
+    .section__2 {
+        @extend %centered;
+
+        .section2__box {
+            flex-wrap: wrap;
+            margin-top: 60px;
+
+            .advantage {
+                .my__text {
+                    position: relative;
+                    left: 20px;
+
+                    .advantages {
+                        @include text-style(700, 14px, 'Roboto', 3px, #212121, start);
+                        margin: 20px 25px 10px;
+                    }
+
+                    .paragraf {
+                        @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section3__box {
+        display: none;
+    }
+
+    .section__4 {
+
+        .headers {
+            padding-top: 60px;
+
+            h2 {
+                @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+            }
+
+        }
+
+        .team__grid {
+            @extend %centered;
+
+            .person {
+                &:nth-of-type(1) {
+                    margin-bottom: 30px
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 30px
+                }
+            }
+        }
+    }
+    .section__5 {
+    
+        h3 {
+            @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+        }
+    
+        .logo__box {
+            height: 227px !important;
+    
+            .logo__img {
+                width: 226px;
             }
         }
     }
