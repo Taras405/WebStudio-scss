@@ -1,12 +1,11 @@
 @import "./utils/base";
-@import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./utils/animista";
+@import "./utils/adaptiv";
 @import "./components/header";
 @import "./components/body";
 @import "./components/modal";
 @import "./components/footer";
-@import "./components-portfolio/header";
 @import "./components-portfolio/body";
 @import "./components-portfolio/footer";
