@@ -1,7 +1,7 @@
-.header__portfolio {
-    border-bottom: 1px #ECECEC solid;
-    margin-bottom: 94px;
-}
+// .header__portfolio {
+//     border-bottom: 1px #ECECEC solid;
+//     margin-bottom: 94px;
+// }
 
 .filters {
     text-align: center;
@@ -40,9 +40,6 @@
 
         &:hover {
             border: 1px #EEEEEE solid;
-            width: 370px;
-            height: 436px;
-            margin: 30px;
             box-shadow: 10px 15px 10px -15px rgba(0, 0, 0, 0.568);
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -96,6 +93,92 @@
 
             .portfolio__p {
                 @include text-style(400, 16px, 'Roboto', 30px, var(--grey), none);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .filters {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 65px;
+
+        .filter__button {
+            @include text-style(500, 16px, 'Roboto', 26px, #212121, center);
+            padding: 6px 22px;
+        }
+    }
+
+    .project__container {
+        width: 768px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+        .project {
+            width: 324px;
+            height: 400px;
+            gap: 30px;
+
+
+            .img__div {
+                img {
+                    width: 324px;
+                }
+
+                .card__h {
+                    .p__h {
+                        @include text-style(400, 18px, 'Roboto', 28px, #FFFFFF, none);
+                    }
+                }
+            }
+
+            .project__title {
+                margin: 24px 20px;
+
+                .portfolio__h2 {
+                    @include text-style(700, 18px, 'Roboto', 36px, #212121, none);
+                }
+
+                .portfolio__p {
+                    @include text-style(400, 16px, 'Roboto', 30px, #757575, none);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .filters {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 65px;
+        display: flex;
+        flex-flow: row wrap;
+
+        .filter__button {
+            @include text-style(500, 16px, 'Roboto', 26px, #212121, center);
+            padding: 6px 22px;
+            margin-right: 8px;
+        }
+    }
+
+    .project__container {
+        width: 320px;
+        margin: 0;
+        padding: 0;
+
+        .project {
+            width: 320px;
+            height: 440px;
+            margin: 0;
+            margin-bottom: 30px;
+
+            .img__div {
+                img {
+                    width: 320px;
+                }
             }
         }
     }
