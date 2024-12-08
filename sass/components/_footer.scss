@@ -117,40 +117,39 @@
 }
 
 @media (max-width: 768px) {
-
     .footer__container {
-        min-width: 320px;
-        max-width: 768px;
-        height: auto;
+        width: 768px;
         margin: 0 auto;
         padding: 72px 0;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
 
         .foot__box1 {
-            width: 231px;
+            width: 232px;
+            text-align: center;
+            margin-left: 76px;
 
             .footer__Webstudio {
-                @include text-style(700, 26px, 'Raleway', 32px, #FFFFFF, left);
+                @include text-style(700, 26px, 'Raleway', 32px, #FFFFFF, center);
             }
 
             .footer__address {
-                @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF, left);
+                @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF, center);
                 margin-top: 20px;
             }
 
             .footer__contact {
-                @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF60, left);
+                @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF60, center);
                 margin-top: 9px;
             }
         }
 
         .foot__box2 {
             width: 206px;
-            margin-left: 70px;
+            margin-left: 165px;
 
             h4 {
-                @include text-style(700, 14px, 'Roboto', 16px, #FFFFFF, left);
+                @include text-style(700, 14px, 'Roboto', 16px, #FFFFFF, center);
                 margin-bottom: 20px;
             }
 
@@ -161,14 +160,14 @@
         }
 
         .foot__box3 {
-            width: 570px;
-            margin-left: 93px;
+            width: 450px;
+            margin-left: 206px;
 
             h4 {
-                @include text-style(700, 14px, 'Roboto', 16px, #FFFFFF, left);
+                @include text-style(700, 14px, 'Roboto', 16px, #FFFFFF, center);
                 margin-bottom: 20px;
+                margin-left: -100px;
             }
-
 
             input {
                 width: 358px;
@@ -177,7 +176,7 @@
             .box {
                 display: flex;
                 flex-flow: column wrap;
-
+                
             }
 
             .email {
@@ -192,12 +191,14 @@
                     height: 50px;
                     @include text-style(700, 16px, 'Roboto', 30px, #FFFFFF, start);
                     padding: 10px 28px;
-                    margin-left: 52px;
+                    margin-left: 72px;
                     margin-top: 12px;
                 }
 
                 .icon__b {
                     bottom: -24px;
+                    width: 24px;
+                    height: 24px;
                 }
             }
         }
@@ -205,9 +206,9 @@
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .footer__container {
-        width: 320px;
+        width: 480px;
         margin: 0 auto;
         display: flex;
         flex-flow: column wrap;
@@ -231,7 +232,7 @@
                 @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF60, center);
             }
         }
-        
+
         .foot__box2 {
             width: 206px;
             margin: 0 auto;
@@ -277,6 +278,7 @@
 
             .button__box {
                 text-align: center;
+
                 .button__f {
                     height: 50px;
                     @include text-style(700, 16px, 'Roboto', 30px, #FFFFFF, start);

@@ -218,9 +218,9 @@ a:hover {
 }
 .header__container .WebStudio {
   font-weight: 700;
-  font-size: 26px;
-  font-family: "Roboto";
-  line-height: 30px;
+  font-size: 24px;
+  font-family: "Raleway";
+  line-height: 28px;
   color: #212121;
   text-align: left;
   letter-spacing: 3%;
@@ -349,6 +349,82 @@ a:hover {
   top: 15px;
 }
 
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__container .WebStudio {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Raleway";
+    line-height: 28px;
+    color: #212121;
+    text-align: none;
+    letter-spacing: 3%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .header__nav {
+    display: block;
+  }
+  .nav__contact {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header__container {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .header__container .WebStudio {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Raleway";
+    line-height: 28px;
+    color: #212121;
+    text-align: left;
+    letter-spacing: 3%;
+    cursor: pointer;
+  }
+  .header__nav {
+    display: none;
+  }
+  .nav__contact {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menu svg {
+    width: 24px;
+    height: 16px;
+  }
+}
 .section__1 {
   background-image: url(/img/background1.png);
   background-repeat: no-repeat;
@@ -423,6 +499,9 @@ a:hover {
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 5px;
+}
+.section__2 .section2__box .advantage .my__text {
+  width: 270px;
 }
 .section__2 .section2__box .advantage .my__text .advantages {
   font-weight: 700;
@@ -610,9 +689,16 @@ a:hover {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .section__2 .section2__box .advantage {
+    width: 354px;
+  }
+  .section__2 .section2__box .advantage .svg__box {
+    background-color: #F5F4FA;
+  }
   .section__2 .section2__box .advantage .my__text {
+    width: 354px;
     position: relative;
-    left: 20px;
+    left: -20px;
   }
   .section__2 .section2__box .advantage .my__text .advantages {
     font-weight: 700;
@@ -648,6 +734,29 @@ a:hover {
     color: #212121;
     text-align: center;
     letter-spacing: 3%;
+  }
+  .section__4 .team__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 30px;
+  }
+  .section__4 .team__grid .person {
+    margin: 0;
+    width: 354px;
+    height: 536px;
+  }
+  .section__4 .team__grid .person img {
+    width: 354px;
+    height: 374px;
+  }
+  .section__4 .team__grid .person .person__icon {
+    display: block;
+    padding: 0;
   }
   .section__4 .team__grid .person:nth-of-type(1) {
     margin-bottom: 30px;
@@ -685,9 +794,9 @@ a:hover {
     margin: 6px auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .section__1 {
-    width: 320px !important;
+    width: 480px;
   }
   .section__1 .advertisement {
     font-weight: 900;
@@ -697,7 +806,7 @@ a:hover {
     color: var(--white);
     text-align: center;
     letter-spacing: 3%;
-    width: 320px;
+    width: 480px;
     height: 84px;
   }
   .section__1 #button {
@@ -715,9 +824,17 @@ a:hover {
         flex-wrap: wrap;
     margin-top: 60px;
   }
+  .section__2 .section2__box .advantage {
+    width: 450px;
+  }
+  .section__2 .section2__box .advantage .svg__box {
+    width: 450px;
+    background-color: #F5F4FA;
+  }
   .section__2 .section2__box .advantage .my__text {
-    position: relative;
+    width: 450px;
     left: -5px;
+    margin-top: 30px;
   }
   .section__2 .section2__box .advantage .my__text .advantages {
     font-weight: 700;
@@ -725,7 +842,7 @@ a:hover {
     font-family: "Roboto";
     line-height: 3px;
     color: #212121;
-    text-align: start;
+    text-align: center;
     letter-spacing: 3%;
     margin: 20px 25px 10px;
   }
@@ -760,10 +877,21 @@ a:hover {
   }
   .section__4 .team__grid .person {
     margin-bottom: 30px;
+    width: 450px;
+    height: 622px;
+  }
+  .section__4 .team__grid .person img {
+    width: 450px;
+    height: 460px;
+  }
+  .section__4 .team__grid .person .person__icon {
+    display: block;
+    gap: 10px;
+    padding: 0;
   }
   .section__5 {
-    height: 761px;
-    width: 320px;
+    height: 400px;
+    width: 480px;
   }
   .section__5 h3 {
     font-weight: 700;
@@ -776,18 +904,16 @@ a:hover {
     padding-top: 60px;
   }
   .section__5 .logo__box {
-    height: 357px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column wrap;
+            flex-direction: column wrap;
     margin-bottom: 60px;
   }
   .section__5 .logo__box .logo__img {
-    width: 250px;
     padding: 22px 64px;
     margin: 6px auto;
   }
@@ -1001,6 +1127,96 @@ input[type=checkbox]:checked {
           box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  .backdrop {
+    z-index: 1;
+  }
+  .box__modal {
+    width: 450px;
+    margin-left: 4px;
+  }
+  .box__modal h3 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Roboto";
+    line-height: 30px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 3%;
+    margin: 20px 0 12px 0;
+    width: 370px;
+  }
+  .box__modal label {
+    width: 450px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 14px;
+    color: #757575;
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .box__modal .other__svg {
+    top: 50%;
+  }
+  .box__modal input,
+  .box__modal textarea {
+    width: 370px;
+  }
+  .box__modal #agreement {
+    width: 16px;
+  }
+  .button__m {
+    width: 200px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .backdrop {
+    z-index: 1;
+  }
+  .box__modal {
+    width: 450px;
+    margin-left: 4px;
+  }
+  .box__modal h3 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Roboto";
+    line-height: 30px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 3%;
+    margin: 20px 0 12px 0;
+    width: 370px;
+  }
+  .box__modal label {
+    width: 450px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 14px;
+    color: #757575;
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .box__modal .other__svg {
+    top: 50%;
+  }
+  .box__modal input,
+  .box__modal textarea {
+    width: 370px;
+  }
+  .box__modal #agreement {
+    width: 16px;
+  }
+  .button__m {
+    width: 200px;
+    margin-left: 80px;
+  }
+}
 .footer {
   background-color: #2F303A;
 }
@@ -1147,21 +1363,21 @@ input[type=checkbox]:checked {
 
 @media (max-width: 768px) {
   .footer__container {
-    min-width: 320px;
-    max-width: 768px;
-    height: auto;
+    width: 768px;
     margin: 0 auto;
     padding: 72px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   .footer__container .foot__box1 {
-    width: 231px;
+    width: 232px;
+    text-align: center;
+    margin-left: 76px;
   }
   .footer__container .foot__box1 .footer__Webstudio {
     font-weight: 700;
@@ -1169,7 +1385,7 @@ input[type=checkbox]:checked {
     font-family: "Raleway";
     line-height: 32px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
   }
   .footer__container .foot__box1 .footer__address {
@@ -1178,7 +1394,7 @@ input[type=checkbox]:checked {
     font-family: "Roboto";
     line-height: 24px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
     margin-top: 20px;
   }
@@ -1188,13 +1404,13 @@ input[type=checkbox]:checked {
     font-family: "Roboto";
     line-height: 24px;
     color: rgba(255, 255, 255, 0.3764705882);
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
     margin-top: 9px;
   }
   .footer__container .foot__box2 {
     width: 206px;
-    margin-left: 70px;
+    margin-left: 165px;
   }
   .footer__container .foot__box2 h4 {
     font-weight: 700;
@@ -1202,7 +1418,7 @@ input[type=checkbox]:checked {
     font-family: "Roboto";
     line-height: 16px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
     margin-bottom: 20px;
   }
@@ -1211,8 +1427,8 @@ input[type=checkbox]:checked {
     height: 44px;
   }
   .footer__container .foot__box3 {
-    width: 570px;
-    margin-left: 93px;
+    width: 450px;
+    margin-left: 206px;
   }
   .footer__container .foot__box3 h4 {
     font-weight: 700;
@@ -1220,9 +1436,10 @@ input[type=checkbox]:checked {
     font-family: "Roboto";
     line-height: 16px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
     margin-bottom: 20px;
+    margin-left: -100px;
   }
   .footer__container .foot__box3 input {
     width: 358px;
@@ -1251,16 +1468,18 @@ input[type=checkbox]:checked {
     text-align: start;
     letter-spacing: 3%;
     padding: 10px 28px;
-    margin-left: 52px;
+    margin-left: 72px;
     margin-top: 12px;
   }
   .footer__container .foot__box3 .button__box .icon__b {
     bottom: -24px;
+    width: 24px;
+    height: 24px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .footer__container {
-    width: 320px;
+    width: 480px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1493,7 +1712,7 @@ input[type=checkbox]:checked {
   .filters {
     text-align: center;
     margin-bottom: 30px;
-    padding-top: 65px;
+    padding-top: 130px;
   }
   .filters .filter__button {
     font-weight: 500;
@@ -1555,11 +1774,8 @@ input[type=checkbox]:checked {
     letter-spacing: 3%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .filters {
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 65px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1567,6 +1783,8 @@ input[type=checkbox]:checked {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    margin-left: 15px;
+    width: 326px;
   }
   .filters .filter__button {
     font-weight: 500;
@@ -1578,19 +1796,21 @@ input[type=checkbox]:checked {
     letter-spacing: 3%;
     padding: 6px 22px;
     margin-right: 8px;
+    margin-bottom: 15px;
   }
   .project__container {
-    width: 320px;
+    width: 480px;
     margin: 0;
     padding: 0;
   }
   .project__container .project {
-    width: 320px;
-    height: 440px;
+    width: 450px;
+    height: 404px;
     margin: 0;
     margin-bottom: 30px;
   }
   .project__container .project .img__div img {
-    width: 320px;
+    width: 480px;
+    height: 294px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -57,6 +57,8 @@
             }
 
             .my__text {
+                width: 270px;
+
                 .advantages {
                     @include text-style(700, 14px, 'Roboto', 3px, #212121, start);
                     margin: 20px 25px 10px;
@@ -241,9 +243,16 @@
             flex-flow: row wrap;
 
             .advantage {
+                width: 354px;
+
+                .svg__box {
+                    background-color: #F5F4FA;
+                }
+
                 .my__text {
+                    width: 354px;
                     position: relative;
-                    left: 20px;
+                    left: -20px;
 
                     .advantages {
                         @include text-style(700, 14px, 'Roboto', 3px, #212121, start);
@@ -264,7 +273,6 @@
     }
 
     .section__4 {
-
         .headers {
             padding-top: 60px;
 
@@ -275,9 +283,24 @@
         }
 
         .team__grid {
-            @extend %centered;
-
+            display: flex;
+            flex-flow: row wrap;
+            gap: 30px;
+            
             .person {
+                margin: 0;
+                width: 354px;
+                height: 536px;
+
+                img {
+                    width: 354px;
+                    height: 374px;
+                }
+                .person__icon {
+                    display: block;
+                    padding: 0;
+                }
+
                 &:nth-of-type(1) {
                     margin-bottom: 30px
                 }
@@ -312,13 +335,13 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .section__1 {
-        width: 320px !important;
+        width: 480px;
 
         .advertisement {
             @include text-style(900, 22px, 'Roboto', 42px, var(--white), center);
-            width: 320px;
+            width: 480px;
             height: 84px;
         }
 
@@ -334,12 +357,20 @@
             margin-top: 60px;
 
             .advantage {
+                width: 450px;
+
+                .svg__box {
+                    width: 450px;
+                    background-color: #F5F4FA;
+                }
+
                 .my__text {
-                    position: relative;
+                    width: 450px;
                     left: -5px;
+                    margin-top: 30px;
 
                     .advantages {
-                        @include text-style(700, 14px, 'Roboto', 3px, #212121, start);
+                        @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
                         margin: 20px 25px 10px;
                     }
 
@@ -357,8 +388,9 @@
     }
 
     .section__4 {
-       margin-top: 60px;
-       margin-bottom: -60px;
+        margin-top: 60px;
+        margin-bottom: -60px;
+
         .headers {
             padding-top: 60px;
 
@@ -370,27 +402,38 @@
         .team__grid {
             .person {
                 margin-bottom: 30px;
+                width: 450px;
+                height: 622px;
+
+                img {
+                    width: 450px;
+                    height: 460px;
+                }
+
+                .person__icon {
+                    display: block;
+                    gap: 10px;
+                    padding: 0;
+                }
             }
         }
     }
 
     .section__5 {
-        height: 761px;
-        width: 320px;
+        height: 400px;
+        width: 480px;
 
         h3 {
             @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
-           padding-top: 60px;
+            padding-top: 60px;
         }
 
         .logo__box {
-            height: 357px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column wrap;
             margin-bottom: 60px;
 
             .logo__img {
-                width: 250px;
                 padding: 22px 64px;
                 margin: 6px auto;
             }

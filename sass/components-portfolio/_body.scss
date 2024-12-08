@@ -102,7 +102,7 @@
     .filters {
         text-align: center;
         margin-bottom: 30px;
-        padding-top: 65px;
+        padding-top: 130px;
 
         .filter__button {
             @include text-style(500, 16px, 'Roboto', 26px, #212121, center);
@@ -149,35 +149,36 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .filters {
-        text-align: center;
-        margin-bottom: 30px;
-        padding-top: 65px;
         display: flex;
         flex-flow: row wrap;
+        margin-left: 15px;
+        width: 326px;
 
         .filter__button {
             @include text-style(500, 16px, 'Roboto', 26px, #212121, center);
             padding: 6px 22px;
             margin-right: 8px;
+            margin-bottom: 15px;
         }
     }
 
     .project__container {
-        width: 320px;
+        width: 480px;
         margin: 0;
         padding: 0;
 
         .project {
-            width: 320px;
-            height: 440px;
+            width: 450px;
+            height: 404px;
             margin: 0;
             margin-bottom: 30px;
 
             .img__div {
                 img {
-                    width: 320px;
+                    width: 480px;
+                    height: 294px;
                 }
             }
         }
