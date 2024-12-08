@@ -25,6 +25,8 @@
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
 
     .project {
         border: 1px #EEEEEE solid;
@@ -108,8 +110,6 @@
     .project__container {
         width: 768px;
         margin: 0 auto;
-        display: flex;
-        flex-flow: row wrap;
 
         .project {
             width: 324px;
@@ -163,7 +163,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-
+        
         .project {
             width: 100%;
             height: auto;

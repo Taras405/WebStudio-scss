@@ -890,8 +890,8 @@ a:hover {
     padding: 0;
   }
   .section__5 {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .section__5 h3 {
     font-weight: 700;
@@ -1172,12 +1172,12 @@ input[type=checkbox]:checked {
     margin-left: 80px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .backdrop {
     z-index: 1;
   }
   .box__modal {
-    width: 450px;
+    width: 100%;
     margin-left: 4px;
   }
   .box__modal h3 {
@@ -1189,10 +1189,10 @@ input[type=checkbox]:checked {
     text-align: center;
     letter-spacing: 3%;
     margin: 20px 0 12px 0;
-    width: 370px;
+    width: 100%;
   }
   .box__modal label {
-    width: 450px;
+    width: 100%;
     height: 58px;
     font-weight: 400;
     font-size: 12px;
@@ -1207,7 +1207,7 @@ input[type=checkbox]:checked {
   }
   .box__modal input,
   .box__modal textarea {
-    width: 370px;
+    width: 100%;
   }
   .box__modal #agreement {
     width: 16px;
@@ -1628,6 +1628,13 @@ input[type=checkbox]:checked {
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .project__container .project {
   border: 1px #EEEEEE solid;
@@ -1727,13 +1734,6 @@ input[type=checkbox]:checked {
   .project__container {
     width: 768px;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
   }
   .project__container .project {
     width: 324px;
