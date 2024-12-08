@@ -335,13 +335,13 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .section__1 {
-        width: 480px;
+        width: 100%;
 
         .advertisement {
             @include text-style(900, 22px, 'Roboto', 42px, var(--white), center);
-            width: 480px;
+            width: 100%;
             height: 84px;
         }
 
@@ -357,15 +357,15 @@
             margin-top: 60px;
 
             .advantage {
-                width: 450px;
+                width: 100%;
 
                 .svg__box {
-                    width: 450px;
+                    width: 100%;
                     background-color: #F5F4FA;
                 }
 
                 .my__text {
-                    width: 450px;
+                    width: 100%;
                     left: -5px;
                     margin-top: 30px;
 
@@ -402,12 +402,12 @@
         .team__grid {
             .person {
                 margin-bottom: 30px;
-                width: 450px;
-                height: 622px;
+                width: 100%;
+                height: auto;
 
                 img {
-                    width: 450px;
-                    height: 460px;
+                    width: 100%;
+                    height: auto;
                 }
 
                 .person__icon {
@@ -420,8 +420,8 @@
     }
 
     .section__5 {
-        height: 400px;
-        width: 480px;
+        height: auto;
+        width: 100%;
 
         h3 {
             @include text-style(700, 28px, 'Roboto', 32px, #212121, center);

@@ -385,9 +385,9 @@ a:hover {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .header__container {
-    width: 480px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -794,9 +794,9 @@ a:hover {
     margin: 6px auto;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .section__1 {
-    width: 480px;
+    width: 100%;
   }
   .section__1 .advertisement {
     font-weight: 900;
@@ -806,7 +806,7 @@ a:hover {
     color: var(--white);
     text-align: center;
     letter-spacing: 3%;
-    width: 480px;
+    width: 100%;
     height: 84px;
   }
   .section__1 #button {
@@ -825,14 +825,14 @@ a:hover {
     margin-top: 60px;
   }
   .section__2 .section2__box .advantage {
-    width: 450px;
+    width: 100%;
   }
   .section__2 .section2__box .advantage .svg__box {
-    width: 450px;
+    width: 100%;
     background-color: #F5F4FA;
   }
   .section__2 .section2__box .advantage .my__text {
-    width: 450px;
+    width: 100%;
     left: -5px;
     margin-top: 30px;
   }
@@ -877,12 +877,12 @@ a:hover {
   }
   .section__4 .team__grid .person {
     margin-bottom: 30px;
-    width: 450px;
-    height: 622px;
+    width: 100%;
+    height: auto;
   }
   .section__4 .team__grid .person img {
-    width: 450px;
-    height: 460px;
+    width: 100%;
+    height: auto;
   }
   .section__4 .team__grid .person .person__icon {
     display: block;
@@ -890,8 +890,8 @@ a:hover {
     padding: 0;
   }
   .section__5 {
-    height: 400px;
-    width: 480px;
+    height: auto;
+    width: 100%;
   }
   .section__5 h3 {
     font-weight: 700;
@@ -1477,9 +1477,9 @@ input[type=checkbox]:checked {
     height: 24px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .footer__container {
-    width: 480px;
+    width: auto;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1526,7 +1526,7 @@ input[type=checkbox]:checked {
     letter-spacing: 3%;
   }
   .footer__container .foot__box2 {
-    width: 206px;
+    width: 100%;
     margin: 0 auto;
   }
   .footer__container .foot__box2 h4 {
@@ -1774,7 +1774,7 @@ input[type=checkbox]:checked {
     letter-spacing: 3%;
   }
 }
-@media (max-width: 480px) {
+@media (man-width: 320px) and (max-width: 480px) {
   .filters {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1784,7 +1784,7 @@ input[type=checkbox]:checked {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     margin-left: 15px;
-    width: 326px;
+    width: 100%;
   }
   .filters .filter__button {
     font-weight: 500;
@@ -1799,18 +1799,18 @@ input[type=checkbox]:checked {
     margin-bottom: 15px;
   }
   .project__container {
-    width: 480px;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
   .project__container .project {
-    width: 450px;
-    height: 404px;
+    width: 100%;
+    height: auto;
     margin: 0;
     margin-bottom: 30px;
   }
   .project__container .project .img__div img {
-    width: 480px;
-    height: 294px;
+    width: 100%;
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */

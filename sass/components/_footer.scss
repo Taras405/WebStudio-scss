@@ -206,9 +206,9 @@
 }
 
 
-@media (max-width: 480px) {
+@media (min-width:320px) and (max-width: 480px) {
     .footer__container {
-        width: 480px;
+        width: auto;
         margin: 0 auto;
         display: flex;
         flex-flow: column wrap;
@@ -234,7 +234,7 @@
         }
 
         .foot__box2 {
-            width: 206px;
+            width: 100%;
             margin: 0 auto;
 
             h4 {
