@@ -46,11 +46,36 @@
                 <a href="tel:+380961111111" class="header__a">+380961111111</a>
             </li>
         </ul>
-        <div class="menu">
-            <svg>
-                <use href="symbol-defs.svg#icon-menu"></use>
-            </svg>
+
+        <!-- Menu -->
+        <div class="header__menu">
+            <button class="open-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24">
+                    <use href="symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="close-menu menu-toggle js-close-menu">
+                <svg width="24" height="24">
+                    <use href="symbol-defs.svg#icon-croos"></use>
+                </svg>
+            </button> 
+            <ul class="menu">
+                <li><a href="">Студія</a></li>
+                <li><a href="">Портфоліо</a></li>
+                <li><a href="">Контакти</a></li>
+                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu__stories">
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
+
     </header>
     <main>
         <section class="section__1">

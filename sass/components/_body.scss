@@ -289,13 +289,14 @@
             
             .person {
                 margin: 0;
-                width: 354px;
-                height: 536px;
+                width: 354px !important;
+                height: 536px !important;
 
                 img {
                     width: 354px;
                     height: 374px;
                 }
+
                 .person__icon {
                     display: block;
                     padding: 0;
@@ -335,6 +336,31 @@
     }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+    .section__1 {
+        .advertisement {
+            @include text-style(900, 22px, 'Roboto', 42px, var(--white), center);
+        }
+    }
+
+    .section__2 {
+        .section2__box {
+            .advantage {
+                .my__text {
+                    .advantages {
+                        @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
+                        margin: 20px 25px 10px;
+                    }
+
+                    .paragraf {
+                        @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .section__1 {
         width: 100%;
@@ -350,93 +376,93 @@
             padding: 10px 20px;
         }
     }
+}
 
-    .section__2 {
-        .section2__box {
-            flex-wrap: wrap;
-            margin-top: 60px;
-
-            .advantage {
-                width: 100%;
-
-                .svg__box {
-                    width: 100%;
-                    background-color: #F5F4FA;
-                }
-
-                .my__text {
-                    width: 100%;
-                    left: -5px;
-                    margin-top: 30px;
-
-                    .advantages {
-                        @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
-                        margin: 20px 25px 10px;
-                    }
-
-                    .paragraf {
-                        @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
-                        margin-left: 25px;
-                    }
-                }
-            }
-        }
-    }
-
-    .section3__box {
-        display: none;
-    }
-
-    .section__4 {
+.section__2 {
+    .section2__box {
+        flex-wrap: wrap;
         margin-top: 60px;
-        margin-bottom: -60px;
 
-        .headers {
-            padding-top: 60px;
+        .advantage {
+            width: 100%;
 
-            h2 {
-                @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+            .svg__box {
+                width: 100%;
+                background-color: #F5F4FA;
+            }
+
+            .my__text {
+                width: 100%;
+                left: -5px;
+                margin-top: 30px;
+
+                .advantages {
+                    @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
+                    margin: 20px 25px 10px;
+                }
+
+                .paragraf {
+                    @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
+                    margin-left: 25px;
+                }
             }
         }
+    }
+}
 
-        .team__grid {
-            .person {
-                margin-bottom: 30px;
+.section3__box {
+    display: none;
+}
+
+.section__4 {
+    margin-top: 60px;
+    margin-bottom: -60px;
+
+    .headers {
+        padding-top: 60px;
+
+        h2 {
+            @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+        }
+    }
+
+    .team__grid {
+        .person {
+            margin-bottom: 30px;
+            width: 100%;
+            height: auto;
+
+            img {
                 width: 100%;
                 height: auto;
+            }
 
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                .person__icon {
-                    display: block;
-                    gap: 10px;
-                    padding: 0;
-                }
+            .person__icon {
+                display: block;
+                gap: 10px;
+                padding: 0;
             }
         }
     }
+}
 
-    .section__5 {
-        width: 100%;
-        height: auto;
+.section__5 {
+    width: 100%;
+    height: auto;
 
-        h3 {
-            @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
-            padding-top: 60px;
-        }
+    h3 {
+        @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+        padding-top: 60px;
+    }
 
-        .logo__box {
-            display: flex;
-            flex-direction: column wrap;
-            margin-bottom: 60px;
-            
-            .logo__img {
-                padding: 22px 64px;
-                margin: 6px auto;
-            }
+    .logo__box {
+        display: flex;
+        flex-direction: column wrap;
+        margin-bottom: 60px;
+
+        .logo__img {
+            padding: 22px 64px;
+            margin: 6px auto;
         }
     }
 }

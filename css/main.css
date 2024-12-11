@@ -349,8 +349,43 @@ a:hover {
   top: 15px;
 }
 
-.menu {
-  display: none;
+.header__menu {
+  display: block;
+}
+.header__menu .open-menu {
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.menu-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.menu-container .close-menu {
+  border: none;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu-container .menu__stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -381,7 +416,7 @@ a:hover {
   .nav__contact {
     display: block;
   }
-  .menu {
+  .header__menu {
     display: none;
   }
 }
@@ -417,10 +452,10 @@ a:hover {
   .nav__contact {
     display: none;
   }
-  .menu {
+  .header__menu {
     display: block;
   }
-  .menu svg {
+  .header__menu svg {
     width: 24px;
     height: 16px;
   }
@@ -747,8 +782,8 @@ a:hover {
   }
   .section__4 .team__grid .person {
     margin: 0;
-    width: 354px;
-    height: 536px;
+    width: 354px !important;
+    height: 536px !important;
   }
   .section__4 .team__grid .person img {
     width: 354px;
@@ -794,6 +829,36 @@ a:hover {
     margin: 6px auto;
   }
 }
+@media (min-width: 480px) and (max-width: 768px) {
+  .section__1 .advertisement {
+    font-weight: 900;
+    font-size: 22px;
+    font-family: "Roboto";
+    line-height: 42px;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 3%;
+  }
+  .section__2 .section2__box .advantage .my__text .advantages {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 3px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 3%;
+    margin: 20px 25px 10px;
+  }
+  .section__2 .section2__box .advantage .my__text .paragraf {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 24px;
+    color: var(--grey);
+    text-align: left;
+    letter-spacing: 3%;
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .section__1 {
     width: 100%;
@@ -819,105 +884,109 @@ a:hover {
     letter-spacing: 3%;
     padding: 10px 20px;
   }
-  .section__2 .section2__box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 60px;
-  }
-  .section__2 .section2__box .advantage {
-    width: 100%;
-  }
-  .section__2 .section2__box .advantage .svg__box {
-    width: 100%;
-    background-color: #F5F4FA;
-  }
-  .section__2 .section2__box .advantage .my__text {
-    width: 100%;
-    left: -5px;
-    margin-top: 30px;
-  }
-  .section__2 .section2__box .advantage .my__text .advantages {
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Roboto";
-    line-height: 3px;
-    color: #212121;
-    text-align: center;
-    letter-spacing: 3%;
-    margin: 20px 25px 10px;
-  }
-  .section__2 .section2__box .advantage .my__text .paragraf {
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Roboto";
-    line-height: 24px;
-    color: var(--grey);
-    text-align: left;
-    letter-spacing: 3%;
-    margin-left: 25px;
-  }
-  .section3__box {
-    display: none;
-  }
-  .section__4 {
-    margin-top: 60px;
-    margin-bottom: -60px;
-  }
-  .section__4 .headers {
-    padding-top: 60px;
-  }
-  .section__4 .headers h2 {
-    font-weight: 700;
-    font-size: 28px;
-    font-family: "Roboto";
-    line-height: 32px;
-    color: #212121;
-    text-align: center;
-    letter-spacing: 3%;
-  }
-  .section__4 .team__grid .person {
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-  }
-  .section__4 .team__grid .person img {
-    width: 100%;
-    height: auto;
-  }
-  .section__4 .team__grid .person .person__icon {
-    display: block;
-    gap: 10px;
-    padding: 0;
-  }
-  .section__5 {
-    width: 100%;
-    height: auto;
-  }
-  .section__5 h3 {
-    font-weight: 700;
-    font-size: 28px;
-    font-family: "Roboto";
-    line-height: 32px;
-    color: #212121;
-    text-align: center;
-    letter-spacing: 3%;
-    padding-top: 60px;
-  }
-  .section__5 .logo__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column wrap;
-            flex-direction: column wrap;
-    margin-bottom: 60px;
-  }
-  .section__5 .logo__box .logo__img {
-    padding: 22px 64px;
-    margin: 6px auto;
-  }
 }
+.section__2 .section2__box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+.section__2 .section2__box .advantage {
+  width: 100%;
+}
+.section__2 .section2__box .advantage .svg__box {
+  width: 100%;
+  background-color: #F5F4FA;
+}
+.section__2 .section2__box .advantage .my__text {
+  width: 100%;
+  left: -5px;
+  margin-top: 30px;
+}
+.section__2 .section2__box .advantage .my__text .advantages {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 3px;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 3%;
+  margin: 20px 25px 10px;
+}
+.section__2 .section2__box .advantage .my__text .paragraf {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 24px;
+  color: var(--grey);
+  text-align: left;
+  letter-spacing: 3%;
+  margin-left: 25px;
+}
+
+.section3__box {
+  display: none;
+}
+
+.section__4 {
+  margin-top: 60px;
+  margin-bottom: -60px;
+}
+.section__4 .headers {
+  padding-top: 60px;
+}
+.section__4 .headers h2 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Roboto";
+  line-height: 32px;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 3%;
+}
+.section__4 .team__grid .person {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+}
+.section__4 .team__grid .person img {
+  width: 100%;
+  height: auto;
+}
+.section__4 .team__grid .person .person__icon {
+  display: block;
+  gap: 10px;
+  padding: 0;
+}
+
+.section__5 {
+  width: 100%;
+  height: auto;
+}
+.section__5 h3 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Roboto";
+  line-height: 32px;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 3%;
+  padding-top: 60px;
+}
+.section__5 .logo__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column wrap;
+          flex-direction: column wrap;
+  margin-bottom: 60px;
+}
+.section__5 .logo__box .logo__img {
+  padding: 22px 64px;
+  margin: 6px auto;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
