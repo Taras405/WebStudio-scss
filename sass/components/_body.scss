@@ -1,5 +1,5 @@
 .section__1 {
-    background-image: url(/img/background1.png);
+    background-image: url("../img/background1.png");
     background-repeat: no-repeat;
     background-color: var(--darkgrey);
     background-size: cover;
@@ -105,15 +105,15 @@
             height: 294px;
 
             &:nth-child(1) {
-                background-image: url(/img/box1.jpg);
+                background-image: url("../img/box1.jpg");
             }
 
             &:nth-child(2) {
-                background-image: url(/img/box2.png);
+                background-image: url("../img/box2.png");
             }
 
             &:nth-child(3) {
-                background-image: url(/img/box3.png);
+                background-image: url("../img/box3.png");
             }
 
             .box__text {
