@@ -108,18 +108,18 @@
     }
 
     .project__container {
-        width: 768px;
+        width: 100%;
         margin: 0 auto;
 
         .project {
-            width: 324px;
-            height: 400px;
-            gap: 30px;
-
+            width: 354px;
+            height: 100%;
+            // gap: 30px;
+            margin: 15px;
 
             .img__div {
                 img {
-                    width: 324px;
+                    width: 100%;
                 }
 
                 .card__h {
@@ -144,7 +144,7 @@
     }
 }
 
-@media (man-width: 320px) and (max-width: 480px) {
+@media (man-width: 480px) and (max-width: 768px) {
     .filters {
         display: flex;
         flex-flow: row wrap;
@@ -167,7 +167,6 @@
         .project {
             width: 100%;
             height: auto;
-            margin: 0;
             margin-bottom: 30px;
 
             .img__div {
@@ -175,6 +174,11 @@
                     width: 100%;
                     height: auto;
                 }
+                .p__h {
+                    margin: 77px 24px;
+                    @include text-style(400, 18px, 'Roboto', 28px, var(--white), none);
+                }
+
             }
         }
     }

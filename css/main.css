@@ -426,7 +426,7 @@ a:hover {
   }
 }
 .section__1 {
-  background-image: url(/img/background1.png);
+  background-image: url("../img/background1.png");
   background-repeat: no-repeat;
   background-color: var(--darkgrey);
   background-size: cover;
@@ -546,13 +546,13 @@ a:hover {
   height: 294px;
 }
 .section3__box .box__section .box:nth-child(1) {
-  background-image: url(/img/box1.jpg);
+  background-image: url("../img/box1.jpg");
 }
 .section3__box .box__section .box:nth-child(2) {
-  background-image: url(/img/box2.png);
+  background-image: url("../img/box2.png");
 }
 .section3__box .box__section .box:nth-child(3) {
-  background-image: url(/img/box3.png);
+  background-image: url("../img/box3.png");
 }
 .section3__box .box__section .box .box__text {
   background-color: var(--darkgrey);
@@ -1732,16 +1732,16 @@ input[type=checkbox]:checked {
     padding: 6px 22px;
   }
   .project__container {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
   .project__container .project {
-    width: 324px;
-    height: 400px;
-    gap: 30px;
+    width: 354px;
+    height: 100%;
+    margin: 15px;
   }
   .project__container .project .img__div img {
-    width: 324px;
+    width: 100%;
   }
   .project__container .project .img__div .card__h .p__h {
     font-weight: 400;
@@ -1774,7 +1774,7 @@ input[type=checkbox]:checked {
     letter-spacing: 3%;
   }
 }
-@media (man-width: 320px) and (max-width: 480px) {
+@media (man-width: 480px) and (max-width: 768px) {
   .filters {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1806,11 +1806,20 @@ input[type=checkbox]:checked {
   .project__container .project {
     width: 100%;
     height: auto;
-    margin: 0;
     margin-bottom: 30px;
   }
   .project__container .project .img__div img {
     width: 100%;
     height: auto;
+  }
+  .project__container .project .img__div .p__h {
+    margin: 77px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 28px;
+    color: var(--white);
+    text-align: none;
+    letter-spacing: 3%;
   }
 }/*# sourceMappingURL=main.css.map */
