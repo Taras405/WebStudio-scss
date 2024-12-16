@@ -55,27 +55,28 @@
                 </svg>
             </button>
         </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="close-menu menu-toggle js-close-menu">
-                <svg width="24" height="24">
+        <div class="menu-container js-menu-container" id="mobile-menu" role="dialog" aria-hidden="true">
+            <button class="close-menu menu-toggle js-close-menu" aria-label="Close menu">
+                <svg width="24" height="24" class="svg-close">
                     <use href="symbol-defs.svg#icon-croos"></use>
                 </svg>
-            </button> 
+            </button>
             <ul class="menu">
-                <li><a href="">Студія</a></li>
-                <li><a href="">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
+                <li><a href="#">Студія</a></li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <ul class="menu menu__contact">
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             </ul>
             <ul class="menu__stories">
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
             </ul>
         </div>
-
     </header>
     <main>
         <section class="section__1">
@@ -346,6 +347,7 @@
             </div>
         </div>
     </footer>
+    <script src="./menu.js"></script>
     <script src="./modal.js"></script>
 </body>
 

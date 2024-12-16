@@ -1,8 +1,9 @@
 .section__1 {
     background-image: url("../img/background1.png");
     background-repeat: no-repeat;
-    background-color: var(--darkgrey);
     background-size: cover;
+    background-position: center;
+    background-color: var(--darkgrey);
     @extend %centered;
     flex-direction: column;
     padding: 200px 0;
@@ -147,11 +148,11 @@
         @extend %centered;
 
         .person {
+            width: 270px !important;
+            height: 420px;
             text-align: center;
             margin: 0 30px;
             background-color: var(--white);
-            width: 270px;
-            height: 420px;
             box-shadow: -10px -5px 10px -15px rgba(0, 0, 0, 0.568), 0px 1px 1px 0px rgba(0, 0, 0, 0.568);
             border-radius: 0px 0px 4px 4px;
 
@@ -286,7 +287,7 @@
             display: flex;
             flex-flow: row wrap;
             gap: 30px;
-            
+
             .person {
                 margin: 0;
                 width: 354px !important;
@@ -364,6 +365,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .section__1 {
         width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
 
         .advertisement {
             @include text-style(900, 22px, 'Roboto', 42px, var(--white), center);
@@ -376,93 +379,93 @@
             padding: 10px 20px;
         }
     }
-}
 
-.section__2 {
-    .section2__box {
-        flex-wrap: wrap;
+    .section__2 {
+        .section2__box {
+            flex-wrap: wrap;
+            margin-top: 60px;
+
+            .advantage {
+                width: 100%;
+
+                .svg__box {
+                    width: 100%;
+                    background-color: #F5F4FA;
+                }
+
+                .my__text {
+                    width: 100%;
+                    left: -5px;
+                    margin-top: 30px;
+
+                    .advantages {
+                        @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
+                        margin: 20px 25px 10px;
+                    }
+
+                    .paragraf {
+                        @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section3__box {
+        display: none;
+    }
+
+    .section__4 {
         margin-top: 60px;
+        margin-bottom: -60px;
 
-        .advantage {
-            width: 100%;
+        .headers {
+            padding-top: 60px;
 
-            .svg__box {
-                width: 100%;
-                background-color: #F5F4FA;
-            }
-
-            .my__text {
-                width: 100%;
-                left: -5px;
-                margin-top: 30px;
-
-                .advantages {
-                    @include text-style(700, 14px, 'Roboto', 3px, #212121, center);
-                    margin: 20px 25px 10px;
-                }
-
-                .paragraf {
-                    @include text-style(400, 14px, 'Roboto', 24px, var(--grey), left);
-                    margin-left: 25px;
-                }
+            h2 {
+                @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
             }
         }
-    }
-}
 
-.section3__box {
-    display: none;
-}
-
-.section__4 {
-    margin-top: 60px;
-    margin-bottom: -60px;
-
-    .headers {
-        padding-top: 60px;
-
-        h2 {
-            @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
-        }
-    }
-
-    .team__grid {
-        .person {
-            margin-bottom: 30px;
-            width: 100%;
-            height: auto;
-
-            img {
+        .team__grid {
+            .person {
+                margin-bottom: 30px;
                 width: 100%;
                 height: auto;
-            }
 
-            .person__icon {
-                display: block;
-                gap: 10px;
-                padding: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .person__icon {
+                    display: block;
+                    gap: 10px;
+                    padding: 0;
+                }
             }
         }
     }
-}
 
-.section__5 {
-    width: 100%;
-    height: auto;
+    .section__5 {
+        width: 100%;
+        height: auto;
 
-    h3 {
-        @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
-        padding-top: 60px;
-    }
+        h3 {
+            @include text-style(700, 28px, 'Roboto', 32px, #212121, center);
+            padding-top: 60px;
+        }
 
-    .logo__box {
-        display: flex;
-        flex-direction: column wrap;
-        margin-bottom: 60px;
+        .logo__box {
+            display: flex;
+            flex-direction: column wrap;
+            margin-bottom: 60px;
 
-        .logo__img {
-            padding: 22px 64px;
-            margin: 6px auto;
+            .logo__img {
+                padding: 22px 64px;
+                margin: 6px auto;
+            }
         }
     }
 }
