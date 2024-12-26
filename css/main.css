@@ -534,7 +534,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section__1 {
-    background-image: url("../img/background-1@2x.jpg");
+    background-image: url("../img-ret@2x/background-1@2x.jpg");
   }
 }
 .section__2 .section2__box {
