@@ -48,3 +48,9 @@ a:hover {
     transition: color 150ms linear;
     cursor: pointer;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
