@@ -610,15 +610,6 @@ img {
   width: 370px;
   height: 294px;
 }
-.section3__box .box__section .box:nth-child(1) {
-  background-image: url("../img/box1.jpg");
-}
-.section3__box .box__section .box:nth-child(2) {
-  background-image: url("../img/box2.png");
-}
-.section3__box .box__section .box:nth-child(3) {
-  background-image: url("../img/box3.png");
-}
 .section3__box .box__section .box .box__text {
   background-color: var(--darkgrey);
   padding: 23px 50px;
